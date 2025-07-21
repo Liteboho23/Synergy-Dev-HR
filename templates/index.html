@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Synergy Dev & HR</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #1a1a1a;
+      color: #f0f0f0;
+    }
+
+    header {
+      background-color: #333;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+
+    header img {
+      height: 150px;
+      width: auto;
+      margin-right: 1rem;
+    }
+
+    nav a {
+      margin-left: 1rem;
+      color: #f0f0f0;
+      text-decoration: none;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #999;
+    }
+
+    .services {
+      display: flex;
+      justify-content: space-around;
+      padding: 2rem;
+      background-color: #2a2a2a;
+    }
+
+    .service {
+      max-width: 300px;
+      text-align: center;
+      transition: background-color 0.3s ease;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    .service:hover {
+      background-color: #3a3a3a;
+    }
+
+    .service i {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: #f0f0f0;
+    }
+
+    .contact {
+      padding: 2rem;
+      background-color: #1a1a1a;
+    }
+
+    .social-icons {
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .social-icons a {
+      color: #f0f0f0;
+      margin: 0 10px;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #000;
+      color: #999;
+    }
+
+  .contact a {
+      color: #f0f0f0; 
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      color: #3a3a3a; 
+    }
+  </style>
+</head>
+<body>
+  <header>
+     <img src="{{ url_for('static', filename='Images/synergy_logo.png') }}" alt="Synergy Logo">
+    <nav>
+      <a href="/">Home</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Software Development & HR Services built for modern business needs.</h2>
+    <p>Empowering Innovation. Enhancing People.</p>
+  </section>
+
+  <section class="services" id="services">
+    <div class="service">
+      <a href="/software" style="color: inherit; text-decoration: none;">
+        <i class="fas fa-cogs"></i>
+        <h4>Software Development</h4>
+        <p>Custom business software, automation tools, and scalable platforms for digital growth.</p>
+      </a>
+    </div>
+    <div class="service">
+      <a href="/hr" style="color: inherit; text-decoration: none;">
+        <i class="fas fa-users"></i>
+        <h4>HR Consulting</h4>
+        <p>HR strategy, talent management, and organizational development solutions tailored to your business.</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h3 style="text-align:center">Get in Touch</h3>
+    <p>Email: <a href="mailto:synergydevhr@outlook.com">synergydevhr@outlook.com</a></p>
+    <p>Phone: <a href="tel:+26662873623">+266 6287 3623</a> | <a href="tel:+27703778961">+27 70 377 8961</a></p>
+    <div class="social-icons">
+       <a href="https://facebook.com/synergydevhr" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook"></i></a>
+       <a href="https://linkedin.com/company/synergy-dev-hr" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+       <a href="https://instagram.com/synergydevhr" target="_blank" rel="noopener" title="Instagram"><i class="fab fa-instagram"></i></a>
+       <a href="https://x.com/synergydevhr" target="_blank" rel="noopener" title="X"><i class="fab fa-x-twitter"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Synergy Dev & HR. All rights reserved.</p>
+  </footer>
+</body>
+</html>
